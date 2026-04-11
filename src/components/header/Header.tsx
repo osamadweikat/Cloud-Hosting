@@ -1,22 +1,19 @@
 import Link from "next/link";
-import { GrTechnology } from "react-icons/gr";
+import module from "./header.module.css";
+import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <header>
-      <nav>
-        <div>
-          <Link href="/">
-            CLOUD <GrTechnology /> HOSTING
-          </Link>
-        </div>
-        <ul>
-          <Link href="/">Home</Link>
-          <Link href="/articles">Articles</Link>
-          <Link href="about">about</Link>
-          <Link href="/admin">Admin Dashboard</Link>
-        </ul>
-      </nav>
+    <header className={module.header}>
+      <Navbar />
+      <div className={module.right}>
+        <Link className={module.btn} href="/login">
+          Login
+        </Link>
+        <Link className={module.btn} href="/register">
+          Register
+        </Link>
+      </div>
     </header>
   );
 };
