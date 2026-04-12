@@ -8,7 +8,7 @@ interface ErrorPageProps {
 
 const ErrorPage = ({ error, reset }: ErrorPageProps) => {
   return (
-    <div className="flex justify-center items-center min-h-[calc(100vh-100px)]">
+    <div className="flex justify-center items-center min-h-[calc(100vh-150px)]">
       <div className="pt-7 text-center">
         <div className="text-3xl text-red-600 font-semibold">
           Something went wrong
