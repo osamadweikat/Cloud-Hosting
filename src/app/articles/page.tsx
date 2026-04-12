@@ -2,7 +2,7 @@ import ArticleItem from "@/src/components/articles/ArticleItem";
 import { Article } from "../../utils/types";
 
 const ArticlesPage = async () => {
-  const response = await fetch("https://jsonplaceholder.typicode.com/postss");
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
   const articles: Article[] = await response.json();
 
   if (!response.ok) {
