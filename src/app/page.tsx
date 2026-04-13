@@ -1,10 +1,11 @@
+import Hero from "../components/home/Hero";
+
 const HomePage = () => {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>Welcome to NEXT JS</p>
-    </div>
-  )
-}
+    <section>
+      <Hero />
+    </section>
+  );
+};
 
-export default HomePage
+export default HomePage;

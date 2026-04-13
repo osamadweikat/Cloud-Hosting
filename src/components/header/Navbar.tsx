@@ -48,7 +48,7 @@ const Navbar = () => {
             className={module.navLink}
             href="about"
           >
-            about
+            About
           </Link>
           <Link
             onClick={() => setToggle(false)}
